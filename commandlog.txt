@@ -1,0 +1,324 @@
+
+
+
+
+
+
+
+####################################################################################################
+# Starting pipeline at Tue Oct 27 01:30:09 CDT 2020
+# Input files:  necklace_config.txt
+# Output Log:  .bpipe/logs/30689.log
+# Stage set_input
+# Stage run_check
+echo "Running necklace version 1.11" ; 	    echo "Using 20 threads" ;             echo "Checking for the data files..." ; 	    for i in data/Zea_mays.B73_RefGen_v4.dna.toplevel.fa data/Zea_mays.B73_RefGen_v4.48.gtf $proteins_related_species rna_seq_files/F_SSa_rep1_1.gz rna_seq_files/F_SSa_rep2_1.gz rna_seq_files/F_SSa_rep3_1.gz rna_seq_files/F_SSa_rep4_1.gz rna_seq_files/F_SSa_rep5_1.gz rna_seq_files/F_SSa_rep6_1.gz rna_seq_files/F_SSb_rep1_1.gz rna_seq_files/F_SSb_rep2_1.gz rna_seq_files/F_SSb_rep3_1.gz rna_seq_files/F_SSb_rep4_1.gz rna_seq_files/F_SSb_rep5_1.gz rna_seq_files/F_SSb_rep6_1.gz rna_seq_files/F_SSc_rep1_1.gz rna_seq_files/F_SSc_rep2_1.gz rna_seq_files/F_SSc_rep3_1.gz rna_seq_files/F_SSc_rep4_1.gz rna_seq_files/F_SSc_rep5_1.gz rna_seq_files/F_SSc_rep6_1.gz rna_seq_files/F_WWa_rep1_1.gz rna_seq_files/F_WWa_rep2_1.gz rna_seq_files/F_WWa_rep3_1.gz rna_seq_files/F_WWa_rep4_1.gz rna_seq_files/F_WWa_rep5_1.gz rna_seq_files/F_WWa_rep6_1.gz rna_seq_files/F_WWb_rep1_1.gz rna_seq_files/F_WWb_rep2_1.gz rna_seq_files/F_WWb_rep3_1.gz rna_seq_files/F_WWb_rep4_1.gz rna_seq_files/F_WWb_rep5_1.gz rna_seq_files/F_WWc_rep1_1.gz rna_seq_files/F_WWc_rep2_1.gz rna_seq_files/F_WWc_rep3_1.gz rna_seq_files/F_WWc_rep4_1.gz rna_seq_files/F_WWc_rep5_1.gz rna_seq_files/L_MSa_rep1_1.gz rna_seq_files/L_MSa_rep2_1.gz rna_seq_files/L_MSa_rep3_1.gz rna_seq_files/L_MSa_rep4_1.gz rna_seq_files/L_MSa_rep5_1.gz rna_seq_files/L_MSb_rep1_1.gz rna_seq_files/L_MSb_rep2_1.gz rna_seq_files/L_MSb_rep3_1.gz rna_seq_files/L_MSb_rep4_1.gz rna_seq_files/L_MSb_rep5_1.gz rna_seq_files/L_MSc_rep1_1.gz rna_seq_files/L_MSc_rep2_1.gz rna_seq_files/L_MSc_rep3_1.gz rna_seq_files/L_MSc_rep4_1.gz rna_seq_files/L_MSc_rep5_1.gz rna_seq_files/L_SSa_rep1_1.gz rna_seq_files/L_SSa_rep2_1.gz rna_seq_files/L_SSa_rep3_1.gz rna_seq_files/L_SSa_rep4_1.gz rna_seq_files/L_SSa_rep5_1.gz rna_seq_files/L_SSb_rep1_1.gz rna_seq_files/L_SSb_rep2_1.gz rna_seq_files/L_SSb_rep3_1.gz rna_seq_files/L_SSb_rep4_1.gz rna_seq_files/L_SSb_rep5_1.gz rna_seq_files/L_SSc_rep1_1.gz rna_seq_files/L_SSc_rep2_1.gz rna_seq_files/L_SSc_rep3_1.gz rna_seq_files/L_SSc_rep4_1.gz rna_seq_files/L_SSc_rep5_1.gz rna_seq_files/L_WWa_rep1_1.gz rna_seq_files/L_WWa_rep2_1.gz rna_seq_files/L_WWa_rep3_1.gz rna_seq_files/L_WWa_rep4_1.gz rna_seq_files/L_WWa_rep5_1.gz rna_seq_files/L_WWb_rep1_1.gz rna_seq_files/L_WWb_rep2_1.gz rna_seq_files/L_WWb_rep3_1.gz rna_seq_files/L_WWb_rep4_1.gz rna_seq_files/L_WWb_rep5_1.gz rna_seq_files/L_WWc_rep1_1.gz rna_seq_files/L_WWc_rep2_1.gz rna_seq_files/L_WWc_rep3_1.gz rna_seq_files/L_WWc_rep4_1.gz rna_seq_files/L_WWc_rep5_1.gz rna_seq_files/F_SSa_rep1_2.gz rna_seq_files/F_SSa_rep2_2.gz rna_seq_files/F_SSa_rep3_2.gz rna_seq_files/F_SSa_rep4_2.gz rna_seq_files/F_SSa_rep5_2.gz rna_seq_files/F_SSa_rep6_2.gz rna_seq_files/F_SSb_rep1_2.gz rna_seq_files/F_SSb_rep2_2.gz rna_seq_files/F_SSb_rep3_2.gz rna_seq_files/F_SSb_rep4_2.gz rna_seq_files/F_SSb_rep5_2.gz rna_seq_files/F_SSb_rep6_2.gz rna_seq_files/F_SSc_rep1_2.gz rna_seq_files/F_SSc_rep2_2.gz rna_seq_files/F_SSc_rep3_2.gz rna_seq_files/F_SSc_rep4_2.gz rna_seq_files/F_SSc_rep5_2.gz rna_seq_files/F_SSc_rep6_2.gz rna_seq_files/F_WWa_rep1_2.gz rna_seq_files/F_WWa_rep2_2.gz rna_seq_files/F_WWa_rep3_2.gz rna_seq_files/F_WWa_rep4_2.gz rna_seq_files/F_WWa_rep5_2.gz rna_seq_files/F_WWa_rep6_2.gz rna_seq_files/F_WWb_rep1_2.gz rna_seq_files/F_WWb_rep2_2.gz rna_seq_files/F_WWb_rep3_2.gz rna_seq_files/F_WWb_rep4_2.gz rna_seq_files/F_WWb_rep5_2.gz rna_seq_files/F_WWc_rep1_2.gz rna_seq_files/F_WWc_rep2_2.gz rna_seq_files/F_WWc_rep3_2.gz rna_seq_files/F_WWc_rep4_2.gz rna_seq_files/F_WWc_rep5_2.gz rna_seq_files/L_MSa_rep1_2.gz rna_seq_files/L_MSa_rep2_2.gz rna_seq_files/L_MSa_rep3_2.gz rna_seq_files/L_MSa_rep4_2.gz rna_seq_files/L_MSa_rep5_2.gz rna_seq_files/L_MSb_rep1_2.gz rna_seq_files/L_MSb_rep2_2.gz rna_seq_files/L_MSb_rep3_2.gz rna_seq_files/L_MSb_rep4_2.gz rna_seq_files/L_MSb_rep5_2.gz rna_seq_files/L_MSc_rep1_2.gz rna_seq_files/L_MSc_rep2_2.gz rna_seq_files/L_MSc_rep3_2.gz rna_seq_files/L_MSc_rep4_2.gz rna_seq_files/L_MSc_rep5_2.gz rna_seq_files/L_SSa_rep1_2.gz rna_seq_files/L_SSa_rep2_2.gz rna_seq_files/L_SSa_rep3_2.gz rna_seq_files/L_SSa_rep4_2.gz rna_seq_files/L_SSa_rep5_2.gz rna_seq_files/L_SSb_rep1_2.gz rna_seq_files/L_SSb_rep2_2.gz rna_seq_files/L_SSb_rep3_2.gz rna_seq_files/L_SSb_rep4_2.gz rna_seq_files/L_SSb_rep5_2.gz rna_seq_files/L_SSc_rep1_2.gz rna_seq_files/L_SSc_rep2_2.gz rna_seq_files/L_SSc_rep3_2.gz rna_seq_files/L_SSc_rep4_2.gz rna_seq_files/L_SSc_rep5_2.gz rna_seq_files/L_WWa_rep1_2.gz rna_seq_files/L_WWa_rep2_2.gz rna_seq_files/L_WWa_rep3_2.gz rna_seq_files/L_WWa_rep4_2.gz rna_seq_files/L_WWa_rep5_2.gz rna_seq_files/L_WWb_rep1_2.gz rna_seq_files/L_WWb_rep2_2.gz rna_seq_files/L_WWb_rep3_2.gz rna_seq_files/L_WWb_rep4_2.gz rna_seq_files/L_WWb_rep5_2.gz rna_seq_files/L_WWc_rep1_2.gz rna_seq_files/L_WWc_rep2_2.gz rna_seq_files/L_WWc_rep3_2.gz rna_seq_files/L_WWc_rep4_2.gz rna_seq_files/L_WWc_rep5_2.gz ;                   do ls $i 2>/dev/null || { echo "CAN'T FIND $i..." ; 		 echo "PLEASE FIX PATH... STOPPING NOW" ; exit 1  ; } ;  	    done ;             echo "All looking good" ;             echo "running  necklace version 1.11.. checks passed" > checks_passed
+# Stage de_novo_assemble (2)
+# Stage build_genome_index (1)
+/home/ssz74/miniconda3/envs/g_assembly/bin/hisat2-build data/Zea_mays.B73_RefGen_v4.dna.toplevel.fa genome_guided_assembly/genome
+cp data/Trinity.fasta de_novo_assembly/de_novo_assembly.fasta
+# Stage gtf_to_splice_sites (1)
+cat data/Zea_mays.B73_RefGen_v4.48.gtf | /home/ssz74/tools/necklace-1.11/tools/bin/python /home/ssz74/miniconda3/envs/g_assembly/bin/hisat2_extract_splice_sites.py - > genome_guided_assembly/splicesites.txt
+# Stage map_reads_to_genome (F)
+# Stage map_reads_to_genome (L)
+/home/ssz74/miniconda3/envs/g_assembly/bin/hisat2   --known-splicesite-infile genome_guided_assembly/splicesites.txt  --dta --summary-file genome_guided_assembly/F.summary -x genome_guided_assembly/genome  -1 rna_seq_files/F_SSa_rep1_1.gz -2 rna_seq_files/F_SSa_rep1_2.gz | /home/ssz74/miniconda3/envs/g_assembly/bin/samtools view -Su - | /home/ssz74/miniconda3/envs/g_assembly/bin/samtools sort - -o genome_guided_assembly/F.bam
+/home/ssz74/miniconda3/envs/g_assembly/bin/hisat2   --known-splicesite-infile genome_guided_assembly/splicesites.txt  --dta --summary-file genome_guided_assembly/L.summary -x genome_guided_assembly/genome  -1 rna_seq_files/L_MSa_rep1_1.gz -2 rna_seq_files/L_MSa_rep1_2.gz | /home/ssz74/miniconda3/envs/g_assembly/bin/samtools view -Su - | /home/ssz74/miniconda3/envs/g_assembly/bin/samtools sort - -o genome_guided_assembly/L.bam
+# Stage genome_assembly (L)
+/home/ssz74/tools/necklace-1.11/tools/bin/stringtie genome_guided_assembly/L.bam -o genome_guided_assembly/L.gtf
+# Stage genome_assembly (F)
+/home/ssz74/tools/necklace-1.11/tools/bin/stringtie genome_guided_assembly/F.bam -o genome_guided_assembly/F.gtf
+# Stage merge_genome_annotations (1)
+cat data/Zea_mays.B73_RefGen_v4.48.gtf > genome_superTranscriptome/ref_annotations_combined.gtf ; /home/ssz74/tools/necklace-1.11/tools/bin/stringtie --merge  -G genome_superTranscriptome/ref_annotations_combined.gtf -o genome_superTranscriptome/genome_merged.gft /scratch/ssz74/full_FR697_trinity/necklace/genome_guided_assembly/F.gtf /scratch/ssz74/full_FR697_trinity/necklace/genome_guided_assembly/L.gtf data/Zea_mays.B73_RefGen_v4.48.gtf
+# Stage flatten_gtf (1)
+/home/ssz74/tools/necklace-1.11/tools/bin/gtf2flatgtf genome_superTranscriptome/genome_merged.gft genome_superTranscriptome/genome_merged.flattened.gft
+# Stage extract_exons_from_fasta (1)
+/home/ssz74/tools/necklace-1.11/tools/bin/gffread genome_superTranscriptome/genome_merged.flattened.gft -g data/Zea_mays.B73_RefGen_v4.dna.toplevel.fa -w genome_superTranscriptome/genome_superT.fasta
+# Stage blat_denovo_ref
+/home/ssz74/tools/necklace-1.11/tools/bin/blat /scratch/ssz74/full_FR697_trinity/necklace/de_novo_assembly/de_novo_assembly.fasta $proteins_related_species -t=dnax -q=prot -minScore=200 -maxIntron=0 cluster_files/denovo_ref.psl
+# ##### Finished at Tue Oct 27 03:03:37 CDT 2020 Duration = 1 hours, 33 minutes, 28.037 seconds ######
+
+
+
+
+
+
+
+
+####################################################################################################
+# Starting pipeline at Tue Oct 27 03:22:32 CDT 2020
+# Input files:  necklace_config.txt
+# Output Log:  .bpipe/logs/1169.log
+# Stage set_input
+# Stage run_check
+# Stage de_novo_assemble (2)
+# Stage build_genome_index (1)
+# Stage gtf_to_splice_sites (1)
+# Stage map_reads_to_genome (F)
+# Stage map_reads_to_genome (L)
+# Stage genome_assembly (L)
+# Stage genome_assembly (F)
+# Stage merge_genome_annotations (1)
+# Stage flatten_gtf (1)
+# Stage extract_exons_from_fasta (1)
+# Stage blat_denovo_ref
+/home/ssz74/tools/necklace-1.11/tools/bin/blat /scratch/ssz74/full_FR697_trinity/necklace/de_novo_assembly/de_novo_assembly.fasta data/viridiplante_uniprot_proteins.fasta -t=dnax -q=prot -minScore=200 -maxIntron=0 cluster_files/denovo_ref.psl
+# Stage cut_chimeras
+/home/ssz74/tools/necklace-1.11/tools/bin/chimera_breaker -c cluster_files/denovo.clusters -f cluster_files/denovo.fasta cluster_files/denovo_ref.psl /scratch/ssz74/full_FR697_trinity/necklace/de_novo_assembly/de_novo_assembly.fasta
+# Stage blat_genomeST_denovo
+cat cluster_files/denovo.fasta /scratch/ssz74/full_FR697_trinity/necklace/genome_superTranscriptome/genome_superT.fasta > /scratch/ssz74/full_FR697_trinity/necklace/cluster_files/temp.fasta ;  /home/ssz74/tools/necklace-1.11/tools/bin/blat -minScore=200 -minIdentity=98 /scratch/ssz74/full_FR697_trinity/necklace/cluster_files/temp.fasta /scratch/ssz74/full_FR697_trinity/necklace/genome_superTranscriptome/genome_superT.fasta cluster_files/denovo_genomeST.psl ;
+# Stage ref_cluster
+sed 1,5d cluster_files/denovo_genomeST.psl | cut -f 10,14 | sort -k2 | uniq -u -f1 | awk '{printf("%s\t%s\n", $2, $1)}' > cluster_files/ref.clusters
+# Stage get_genome_ST_names
+grep "^>" /scratch/ssz74/full_FR697_trinity/necklace/genome_superTranscriptome/genome_superT.fasta | sed 's/>//g' | cut -f1 -d " " > cluster_files/genome_superT.names
+# Stage make_cluster_files_for_lace
+cut -f 14 cluster_files/denovo_genomeST.psl | sort -u > /scratch/ssz74/full_FR697_trinity/necklace/cluster_files/temp.cl ; /home/ssz74/tools/necklace-1.11/tools/bin/remove_clusters_match /scratch/ssz74/full_FR697_trinity/necklace/cluster_files/temp.cl cluster_files/denovo.clusters > /scratch/ssz74/full_FR697_trinity/necklace/cluster_files/denovo_final.clusters; rm /scratch/ssz74/full_FR697_trinity/necklace/cluster_files/temp.cl ; /home/ssz74/tools/necklace-1.11/tools/bin/final_cluster cluster_files/genome_superT.names cluster_files/ref.clusters /scratch/ssz74/full_FR697_trinity/necklace/cluster_files/denovo_final.clusters > cluster_files/clusters.txt; cat /scratch/ssz74/full_FR697_trinity/necklace/genome_superTranscriptome/genome_superT.fasta cluster_files/denovo.fasta > cluster_files/sequences.fasta
+# Stage run_lace
+/home/ssz74/tools/necklace-1.11/tools/bin/lace --cores 20 --tidy --outputDir /scratch/ssz74/full_FR697_trinity/necklace/superTranscriptome cluster_files/sequences.fasta cluster_files/clusters.txt ; rm -rf /scratch/ssz74/full_FR697_trinity/necklace/superTranscriptome/SuperFiles
+# ###### Finished at Tue Oct 27 06:15:38 CDT 2020 Duration = 2 hours, 53 minutes, 6.062 seconds ######
+
+
+
+
+
+
+
+
+####################################################################################################
+# Starting pipeline at Tue Oct 27 11:47:48 CDT 2020
+# Input files:  necklace_config.txt
+# Output Log:  .bpipe/logs/24408.log
+# Stage set_input
+# Stage run_check
+# Stage de_novo_assemble (2)
+# Stage build_genome_index (1)
+# Stage gtf_to_splice_sites (1)
+# Stage map_reads_to_genome (F)
+# Stage map_reads_to_genome (L)
+# Stage genome_assembly (F)
+# Stage genome_assembly (L)
+# Stage merge_genome_annotations (1)
+# Stage flatten_gtf (1)
+# Stage extract_exons_from_fasta (1)
+# Stage blat_denovo_ref
+# Stage cut_chimeras
+# Stage blat_genomeST_denovo
+# Stage ref_cluster
+# Stage get_genome_ST_names
+# Stage make_cluster_files_for_lace
+# Stage run_lace
+/home/ssz74/tools/necklace-1.11/tools/bin/lace --cores 20 --tidy --outputDir /scratch/ssz74/full_FR697_trinity/necklace/superTranscriptome cluster_files/sequences.fasta cluster_files/clusters.txt ; rm -rf /scratch/ssz74/full_FR697_trinity/necklace/superTranscriptome/SuperFiles
+# ################ Finished at Tue Oct 27 11:47:50 CDT 2020 Duration = 2.492 seconds #################
+
+
+
+
+
+
+
+
+####################################################################################################
+# Starting pipeline at Tue Oct 27 11:53:31 CDT 2020
+# Input files:  necklace_config.txt
+# Output Log:  .bpipe/logs/27088.log
+# Stage set_input
+# Stage run_check
+# Stage de_novo_assemble (2)
+# Stage build_genome_index (1)
+# Stage gtf_to_splice_sites (1)
+# Stage map_reads_to_genome (F)
+# Stage map_reads_to_genome (L)
+# Stage genome_assembly (F)
+# Stage genome_assembly (L)
+# Stage merge_genome_annotations (1)
+# Stage flatten_gtf (1)
+# Stage extract_exons_from_fasta (1)
+# Stage blat_denovo_ref
+# Stage cut_chimeras
+# Stage blat_genomeST_denovo
+# Stage ref_cluster
+# Stage get_genome_ST_names
+# Stage make_cluster_files_for_lace
+# Stage run_lace
+/home/ssz74/tools/necklace-1.11/tools/bin/lace --cores 20 --tidy --outputDir /scratch/ssz74/full_FR697_trinity/necklace/superTranscriptome cluster_files/sequences.fasta cluster_files/clusters.txt ; rm -rf /scratch/ssz74/full_FR697_trinity/necklace/superTranscriptome/SuperFiles
+# ################ Finished at Tue Oct 27 11:53:34 CDT 2020 Duration = 2.479 seconds #################
+
+
+
+
+
+
+
+
+####################################################################################################
+# Starting pipeline at Tue Oct 27 14:13:04 CDT 2020
+# Input files:  necklace_config.txt
+# Output Log:  .bpipe/logs/7340.log
+# Stage set_input
+# Stage run_check
+# Stage de_novo_assemble (2)
+# Stage build_genome_index (1)
+# Stage gtf_to_splice_sites (1)
+# Stage map_reads_to_genome (F)
+# Stage map_reads_to_genome (L)
+# Stage genome_assembly (L)
+# Stage genome_assembly (F)
+# Stage merge_genome_annotations (1)
+# Stage flatten_gtf (1)
+# Stage extract_exons_from_fasta (1)
+# Stage blat_denovo_ref
+# Stage cut_chimeras
+# Stage blat_genomeST_denovo
+# Stage ref_cluster
+# Stage get_genome_ST_names
+# Stage make_cluster_files_for_lace
+# Stage run_lace
+/home/ssz74/tools/necklace-1.11/tools/bin/lace --cores 20 --tidy --outputDir /scratch/ssz74/full_FR697_trinity/necklace/superTranscriptome cluster_files/sequences.fasta cluster_files/clusters.txt ; rm -rf /scratch/ssz74/full_FR697_trinity/necklace/superTranscriptome/SuperFiles
+# ################ Finished at Tue Oct 27 14:13:06 CDT 2020 Duration = 1.988 seconds #################
+
+
+
+
+
+
+
+
+####################################################################################################
+# Starting pipeline at Tue Oct 27 14:23:33 CDT 2020
+# Input files:  necklace_config.txt
+# Output Log:  .bpipe/logs/7639.log
+# Stage set_input
+# Stage run_check
+# Stage de_novo_assemble (2)
+# Stage build_genome_index (1)
+# Stage gtf_to_splice_sites (1)
+# Stage map_reads_to_genome (L)
+# Stage map_reads_to_genome (F)
+# Stage genome_assembly (L)
+# Stage genome_assembly (F)
+# Stage merge_genome_annotations (1)
+# Stage flatten_gtf (1)
+# Stage extract_exons_from_fasta (1)
+# Stage blat_denovo_ref
+# Stage cut_chimeras
+# Stage blat_genomeST_denovo
+# Stage ref_cluster
+# Stage get_genome_ST_names
+# Stage make_cluster_files_for_lace
+# Stage run_lace
+/home/ssz74/tools/necklace-1.11/tools/bin/lace --cores 20 --tidy --outputDir /scratch/ssz74/full_FR697_trinity/necklace/superTranscriptome cluster_files/sequences.fasta cluster_files/clusters.txt ; rm -rf /scratch/ssz74/full_FR697_trinity/necklace/superTranscriptome/SuperFiles
+# ################ Finished at Tue Oct 27 14:23:35 CDT 2020 Duration = 1.983 seconds #################
+
+
+
+
+
+
+
+
+####################################################################################################
+# Starting pipeline at Tue Oct 27 14:26:38 CDT 2020
+# Input files:  necklace_config.txt
+# Output Log:  .bpipe/logs/8460.log
+# Stage set_input
+# Stage run_check
+# Stage de_novo_assemble (2)
+# Stage build_genome_index (1)
+# Stage gtf_to_splice_sites (1)
+# Stage map_reads_to_genome (F)
+# Stage map_reads_to_genome (L)
+# Stage genome_assembly (F)
+# Stage genome_assembly (L)
+# Stage merge_genome_annotations (1)
+# Stage flatten_gtf (1)
+# Stage extract_exons_from_fasta (1)
+# Stage blat_denovo_ref
+# Stage cut_chimeras
+# Stage blat_genomeST_denovo
+# Stage ref_cluster
+# Stage get_genome_ST_names
+# Stage make_cluster_files_for_lace
+# Stage run_lace
+/home/ssz74/tools/necklace-1.11/tools/bin/lace --cores 20 --tidy --outputDir /scratch/ssz74/full_FR697_trinity/necklace/superTranscriptome cluster_files/sequences.fasta cluster_files/clusters.txt ; rm -rf /scratch/ssz74/full_FR697_trinity/necklace/superTranscriptome/SuperFiles
+# ################ Finished at Tue Oct 27 14:26:40 CDT 2020 Duration = 2.032 seconds #################
+
+
+
+
+
+
+
+
+####################################################################################################
+# Starting pipeline at Tue Oct 27 14:33:06 CDT 2020
+# Input files:  necklace_config.txt
+# Output Log:  .bpipe/logs/10428.log
+# Stage set_input
+# Stage run_check
+# Stage de_novo_assemble (2)
+# Stage build_genome_index (1)
+# Stage gtf_to_splice_sites (1)
+# Stage map_reads_to_genome (F)
+# Stage map_reads_to_genome (L)
+# Stage genome_assembly (F)
+# Stage genome_assembly (L)
+# Stage merge_genome_annotations (1)
+# Stage flatten_gtf (1)
+# Stage extract_exons_from_fasta (1)
+# Stage blat_denovo_ref
+# Stage cut_chimeras
+# Stage blat_genomeST_denovo
+# Stage ref_cluster
+# Stage get_genome_ST_names
+# Stage make_cluster_files_for_lace
+# Stage run_lace
+/home/ssz74/tools/necklace-1.11/tools/bin/lace --cores 20 --tidy --outputDir /scratch/ssz74/full_FR697_trinity/necklace/superTranscriptome cluster_files/sequences.fasta cluster_files/clusters.txt ; rm -rf /scratch/ssz74/full_FR697_trinity/necklace/superTranscriptome/SuperFiles
+# ################ Finished at Tue Oct 27 14:33:08 CDT 2020 Duration = 1.966 seconds #################
+
+
+
+
+
+
+
+
+####################################################################################################
+# Starting pipeline at Tue Oct 27 15:14:34 CDT 2020
+# Input files:  necklace_config.txt
+# Output Log:  .bpipe/logs/12519.log
+# Stage set_input
+# Stage run_check
+# Stage de_novo_assemble (2)
+# Stage build_genome_index (1)
+# Stage gtf_to_splice_sites (1)
+# Stage map_reads_to_genome (F)
+# Stage map_reads_to_genome (L)
+# Stage genome_assembly (F)
+# Stage genome_assembly (L)
+# Stage merge_genome_annotations (1)
+# Stage flatten_gtf (1)
+# Stage extract_exons_from_fasta (1)
+# Stage blat_denovo_ref
+# Stage cut_chimeras
+# Stage blat_genomeST_denovo
+# Stage ref_cluster
+# Stage get_genome_ST_names
+# Stage make_cluster_files_for_lace
+# Stage run_lace
+/home/ssz74/miniconda3/envs/lace/bin/Lace --cores 20 --tidy --outputDir /scratch/ssz74/full_FR697_trinity/necklace/superTranscriptome cluster_files/sequences.fasta cluster_files/clusters.txt ; rm -rf /scratch/ssz74/full_FR697_trinity/necklace/superTranscriptome/SuperFiles
+# Stage build_ST_index
+/home/ssz74/miniconda3/envs/g_assembly/bin/hisat2-build superTranscriptome/SuperDuper.fasta mapped_reads/ST
+# Stage map_reads_to_ST (F)
+# Stage map_reads_to_ST (L)
+/home/ssz74/miniconda3/envs/g_assembly/bin/hisat2  --dta --threads 1 --summary-file mapped_reads/L.summary --pen-noncansplice 0 --novel-splicesite-outfile mapped_reads/L.splice.sites -x mapped_reads/ST -1 rna_seq_files/L_MSa_rep1_1.gz -2 rna_seq_files/L_MSa_rep1_2.gz | /home/ssz74/miniconda3/envs/g_assembly/bin/samtools view -Su - | /home/ssz74/miniconda3/envs/g_assembly/bin/samtools sort - -o mapped_reads/L.bam ; /home/ssz74/miniconda3/envs/g_assembly/bin/samtools index mapped_reads/L.bam
+/home/ssz74/miniconda3/envs/g_assembly/bin/hisat2  --dta --threads 1 --summary-file mapped_reads/F.summary --pen-noncansplice 0 --novel-splicesite-outfile mapped_reads/F.splice.sites -x mapped_reads/ST -1 rna_seq_files/F_SSa_rep1_1.gz -2 rna_seq_files/F_SSa_rep1_2.gz | /home/ssz74/miniconda3/envs/g_assembly/bin/samtools view -Su - | /home/ssz74/miniconda3/envs/g_assembly/bin/samtools sort - -o mapped_reads/F.bam ; /home/ssz74/miniconda3/envs/g_assembly/bin/samtools index mapped_reads/F.bam
+# Stage get_splice_blocks
+/home/ssz74/miniconda3/envs/g_assembly/bin/samtools faidx superTranscriptome/SuperDuper.fasta ; cut -f1,2 superTranscriptome/SuperDuper.fasta.fai > /scratch/ssz74/full_FR697_trinity/necklace/counts/gene.sizes ; /home/ssz74/tools/necklace-1.11/tools/bin/make_blocks /scratch/ssz74/full_FR697_trinity/necklace/counts/gene.sizes /scratch/ssz74/full_FR697_trinity/necklace/mapped_reads/F.splice.sites /scratch/ssz74/full_FR697_trinity/necklace/mapped_reads/L.splice.sites > counts/blocks.gtf
+# Stage count_reads
+/home/ssz74/tools/necklace-1.11/tools/bin/featureCounts -T 20 --primary -p -t exon -g gene_id  -a counts/blocks.gtf -o counts/gene.counts /scratch/ssz74/full_FR697_trinity/necklace/mapped_reads/F.bam /scratch/ssz74/full_FR697_trinity/necklace/mapped_reads/L.bam ; /home/ssz74/tools/necklace-1.11/tools/bin/featureCounts -T 20 --primary -p --fraction -O -f -t exon -g gene_id  -a counts/blocks.gtf -o counts/block.counts /scratch/ssz74/full_FR697_trinity/necklace/mapped_reads/F.bam /scratch/ssz74/full_FR697_trinity/necklace/mapped_reads/L.bam ;
+# Stage get_gene_info
+ann_text="Annotation" ;  	 gg_text=`echo "$ann_text + Genome guided assembly"` ; 	 dn_text=`echo "$gg_text + De novo assembly"` ; 	 genes_dn_only=`cut -f2 cluster_files/clusters.txt | grep "^REL-" | sort -u  | wc -l` ; 	 genes_gg_only=`cut -f2 cluster_files/clusters.txt | grep "^MSTRG" | sort -u  | wc -l` ;    	 genes_total=`cut -f2 cluster_files/clusters.txt | sort -u  | wc -l` ; 	 genes_gg=$(($genes_total-$genes_dn_only)) ; 	 genes_ann=$(($genes_gg-$genes_gg_only)) ; 	 rm -rf stats/gene_info.txt ; 	 echo "Genes found:" >> stats/gene_info.txt ;          echo "-------------" >> stats/gene_info.txt ; 	 echo "$genes_ann	$ann_text" >> stats/gene_info.txt ; 	 echo "$genes_gg	$gg_text" >> stats/gene_info.txt ; 	 echo "$genes_total	$dn_text" >> stats/gene_info.txt ;
+# Stage get_bp_info
+ann_text="Annotation" ;  	 gg_text=`echo "$ann_text + Genome guided assembly"` ; 	 dn_text=`echo "$gg_text + De novo assembly"` ; 	 genes_dn_only=`cut -f2 cluster_files/clusters.txt | grep "^REL-" | sort -u  | wc -l` ; 	 genes_gg_only=`cut -f2 cluster_files/clusters.txt | grep "^MSTRG" | sort -u  | wc -l` ;    	 genes_total=`cut -f2 cluster_files/clusters.txt | sort -u  | wc -l` ; 	 rm -rf stats/size_info.txt ; 	 bp_all=`grep -v "^>" superTranscriptome/SuperDuper.fasta | wc -c` ; 	 bp_all=$(($bp_all-$genes_total)) ; 	 bp_gg=`awk 'END { print s } { s += $5 - $4 + 1 }' genome_superTranscriptome/genome_merged.flattened.gft` ; 	 bp_ann=`/home/ssz74/tools/necklace-1.11/tools/bin/stringtie --merge  genome_superTranscriptome/ref_annotations_combined.gtf | /home/ssz74/tools/necklace-1.11/tools/bin/gtf2flatgtf /dev/stdin /dev/stdout | awk 'END { print s } { s += $5 - $4 + 1 }' - ` ;  	 echo "SuperTranscriptome Size (bp):" >> stats/size_info.txt ; 	 echo "-----------------------------" >> stats/size_info.txt ; 	 echo "$bp_ann	$ann_text" >> stats/size_info.txt ; 	 echo "$bp_gg	$gg_text" >> stats/size_info.txt ; 	 echo $bp_all"	$dn_text" >> stats/size_info.txt ;
+# Stage get_mapping_info
+reads=`cat /scratch/ssz74/full_FR697_trinity/necklace/mapped_reads/F.summary /scratch/ssz74/full_FR697_trinity/necklace/mapped_reads/L.summary | grep "reads; of these:" | cut -f1 -d " " | paste -sd+ - | bc` ; 	 reads=`echo $(( $reads * 2 ))`; 	 not_aligning_st=`cat /scratch/ssz74/full_FR697_trinity/necklace/mapped_reads/F.summary /scratch/ssz74/full_FR697_trinity/necklace/mapped_reads/L.summary | grep "aligned 0 times$" | cut -f1 -d "(" | paste -sd+ - | bc` ; 	 rm -rf stats/mapping_info.txt ; 	 echo "Read:" >> stats/mapping_info.txt ; 	 echo "-----" >> stats/mapping_info.txt ; 	 echo "$reads	Total" >> stats/mapping_info.txt ; 	 echo $(($reads-$not_aligning_st))"	Map to superTranscriptome" >> stats/mapping_info.txt ;
+# ##### Finished at Tue Oct 27 16:56:58 CDT 2020 Duration = 1 hours, 42 minutes, 23.704 seconds ######
+
